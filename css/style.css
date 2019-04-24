@@ -1,4 +1,71 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+}
+
+.container {
+  margin: 25px auto;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 0px;
+  font-weight: 600;
+}
+
+.preview {
+  position: relative;
+  margin: 25px 0px;
+}
+
+.preview h2{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 2em;
+}
+
+img {
+    object-fit: cover;
+}
+
+
+@media screen and (min-width: 575px) {
+  .container {
+    padding: 0px 55px;
+  }
+
+    h1 {
+    padding-bottom: 20px;
+  }
+  .preview {
+    margin: 1%;
+    width: 48%;
+    float: left;
+  }
+
+  img {
+    height:200px;
+    overflow: hidden;
+  }
+}
+
+
+@media screen and (min-width: 991px) {
+.container{
+  padding: 0px 150px;
+}
+  .preview {
+    margin: 1%;
+    width: 23%;
+  }
 }
